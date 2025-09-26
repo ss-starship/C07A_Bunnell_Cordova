@@ -167,7 +167,17 @@ public class GameEngine {
 	 */
 	public void movePieces() {
 		for (Moveable piece : movingPieces) {
+			// Remove piece from its old location
+			if (piece instanceof GamePiece) {
+				int oldLocation = ((GamePiece) piece).getLocation();
+				gameBoard[oldLocation] = null;
+			}
 			piece.move(gameBoard, player.getLocation());
+			// Place piece at its new location
+			if (piece instanceof GamePiece) {
+				int newLocation = ((GamePiece) piece).getLocation();
+				gameBoard[newLocation] = (Drawable) piece;
+			}
 		}
 	}
 
