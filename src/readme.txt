@@ -1,9 +1,8 @@
 Authors: Sarah Bunnell and Leslie Cordova
 Section: A
 Resources:
-
-
-
+ChatGPT for game piece ideas
+https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html
 
 Gameplay Guide: 
 AlienShip A - movement, no interaction
